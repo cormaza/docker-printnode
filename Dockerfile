@@ -13,7 +13,7 @@ RUN apt-get install -y curl cups cups-pdf avahi-daemon && \
 
 # Setup PrintNode
 RUN mkdir /usr/local/PrintNode && \
-    curl -s https://dl.printnode.com/client/printnode/4.24.1/PrintNode-4.24.1-ubuntu-20.04-x86_64.tar.gz | \
+    curl -s https://dl.printnode.com/client/printnode/4.27.17/PrintNode-4.27.17-ubuntu-20.04-x86_64.tar.gz | \
     tar -xz -C /usr/local/PrintNode --strip-components 1
 
 # Remove backends that aren't needed
